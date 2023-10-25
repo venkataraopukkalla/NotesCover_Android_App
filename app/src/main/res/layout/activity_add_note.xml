@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F5EEC8"
+    android:layout_height="match_parent"
+    tools:context=".AddNote">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DADDB1"
+            android:id="@+id/toolbar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.1"
+                    android:id="@+id/save_img"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check_logo"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/addimage_logo"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share_logo"
+                    android:layout_weight="0.5"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/savepdf_txt"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/save_logo"/>
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="none">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/title_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alice"
+                android:background="#F5EEC8"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:hint="Your title text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/storyInputLayout"
+            android:layout_width="match_parent"
+            app:hintEnabled="false"
+            app:boxBackgroundMode="none"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/story_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F5EEC8"
+                android:fontFamily="sans-serif"
+                android:hint="Your Context"
+                android:inputType="textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
