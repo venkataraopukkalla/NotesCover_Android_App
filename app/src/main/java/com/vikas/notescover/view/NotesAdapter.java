@@ -15,6 +15,7 @@ import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.vikas.notescover.AddNote;
+
 import com.vikas.notescover.R;
 import com.vikas.notescover.model.Notes;
 import com.vikas.notescover.model.NotesEntity;
